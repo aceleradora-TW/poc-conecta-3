@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/cards.css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/modal.css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/sections.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/navbar.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta | Resultado da Busca</title>
+
+
+<!-- script do botão que limpa o text area da modal, é I-M-P-O-R-T-A-N-T-E, não apaguem!!!!!!!!!! -->
+  <script>
+  function apagarModal(){
+    $("#mensagemModal").html("");
+    $("#mensagemModal").val("");
+    $("#mensagemModal").focus();
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="my-modal" id="myModal">
+    <div class="modal-content">
+      <span class="btn-close">&times;</span>
+      <h2><center>Contato pela plataforma</center></h2>
+      <div class="LineDescription">
+        <center><p class="pa">Escreva sua mensagem no campo abaixo<br>
+          (essa empresa costuma responder em até 2 dias).<br></p>
+
+          <textarea autofocus onfocus="this.innerHTML = this.innerHTML;" id="mensagemModal">Tenho interesse em realizar uma parceria com sua empresa, devido as competências que possui.</textarea>
+          <button class="magic-button-modal1 botaoLimpa" type="button" name="button" onclick="apagarModal()">Limpar</button>
+
+        </center>
+      </div>
+
+      <!-- Aqui funciona -->
+      <!-- <button class="magic-button-modal" onclick="change">Enviar</button><br> -->
+      <!-- Aqui funciona -->
+
+
+      <!-- Aqui não sei -->
+      <button class="magic-button-modal1 btn-primary" style="border-radius: 4px; margin: 16px 0 0 223px;" id="magic-button-modal1" onclick="change">Enviar</button><br>
+      <span class="success-message-modal1" id="success-message-modal1"><i class="glyphicon glyphicon-ok"></i> Mensagem enviada com sucesso.</span>
+      <!-- Aqui não sei -->
+
+
+    </div>
+  </div>
+
+
+  <section class="Section">
+    <div class="Navbar">
+      <div class="NavLogo">
+        <a href="/"><img src="/images/logo2.png"></a>
+      </div>
+
+      <div class="NavLinks">
+
+        <a  class="Link" href="/#1">Sobre</a>
+        <a class="Link" href="/#2">Como funciona</a>
+
+
+      </div>
+
+    </div>
+
+    <section class="SectionCards">
+      <div class="Text" style="font-size: 25px">
+        Resultados para a sua busca
+      </div>
+      <br>
+
+      <!-- INICIO Dropdown bootsnipp -->
+
+      <div class="Order left-order" style="padding-bottom: 5px">
+        <label class="Text" >Ordenar pesquisa:</label>
+
+
+        <div class="btn-group show-on-hover">
+          <button type="button" class="btn-ordena btn btn-primary dropdown-toggle " style = "padding: 4px 50px !important;" data-toggle="dropdown">
+            Avaliações <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/avaliacao">Avaliações</a></li>
+            <li><a href="/az">A-Z</a></li>
+            <li><a href="/za">Z-A</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <!-- FIM Dropdown bootsnipp -->
+
+
+
+
+      <div class="BoxCards">
+        <div class="CardLine">
+          <!-- CARD 1 -->
+          <div class="Card listaCard">
+            <div class="CardContent">
+              <span class="u-fontBold" style="margin-top: 10px; font-size:20px;">CenterTech</span>
+              <div class="LineLogo" style="height: 25%;">
+                <div class="LogoCard">
+                  <img src="images/empresa1.jpg">
+                </div>
+
+                <div class="TextCard">
+                  <span>A empresa <span class="u-fontBold">CenterTech</span> deixa para trás ideia tradicionais e aposta em uma abordagem de desenvolvimento de software moderna.</span>
+                </div>
+
+              </div>
+              <div class="row" style="margin-top:20px;">
+
+                <div style="margin-left: 15px; text-align: center;">
+
+                  <div class="TitleDescription">Desenvolvimento web
+
+                    <span class="stars" style="margin-left: 10px">
+                      <i data-toggle="tooltip" class="glyphicon glyphicon-info-sign tooltip-right" style="margin: 3px 0 0 5px; font-size: 15px; color: #66b3f9; cursor:pointer;" title="Avaliação baseada em pesquisa interna feita pelo TECNOPUC com base nas competências"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                    </span>
+
+                  </div>
+
+                  <!-- stars -->
+
+                  <!-- .stars -->
+
+                  <!-- </div> -->
+                </div>
+              </div>
+              <div class="LineDescription">
+
+                <div class="TitleDescription" style="margin-bottom: 5px">Demais competências
+
+
+                  <!-- BOOTSNIPP -->
+
+
+                  <!-- <div class="container"> -->
+
+
+
+                  <!-- BOOTSNIPP -->
+
+                </div>
+                <div class="LineList">
+                  <div class="List">
+                    <ul>
+                      <li>Código aberto</li>
+                      <li>Desenvolvimento</li>
+                      <li>Desenvolvimento Java</li>
+                    </ul>
+                  </div>
+                  <div class="List">
+                    <ul>
+                      <li>Design responsivo</li>
+                      <li style="font-weight: bold;">Desenvolvimento web</li>
+                      <li>Inteligência artificial</li>
+                    </ul>
+
+                  </div>
+                  <div class="List">
+                    <ul>
+                      <li>Scrum</li>
+                      <li>TDD</li>
+                      <li>Testes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Inicio FOOTER -->
+            <div class="CardFooter" style="margin-left: 14px;">
+              <div class="Contact">
+                <div>
+                  <span style="font-size=1em; line-height:1.4em;">
+                    <b>José Antunes
+                    </span></br>
+                    <span style="font-size=1em; line-height:1.4em;">
+                      joseantunes@centertech.com
+                    </span>
+                  </div>
+                  <div>
+                    <span style="font-size=1em; line-height:1.4em;">
+                      (51)  99685-5821
+                    </span></br>
+                    <span style="font-size=1em; line-height:1.4em;">
+                      www.centertech.com.br</b>
+                    </span>
+                  </div>
+
+                  <button data-toggle="tooltip" title="Envia uma mensagem à empresa requerindo uma parceria! " class="magic-button btn-primary" id="magic-button-1" onclick="change" style="border-radius:5px">Contatar</button><br>
+
+                </div>
+              </div>
+              <!-- Fim FOOTER -->
+            </div>
+
+            <!-- FIM CARD 1 -->
+
+            <!--CARD 2-->
+            <div class="Card listaCard">
+              <div class="CardContent">
+                <span class="u-fontBold" style="margin-top: 10px; font-size:20px;">Innovatis</span>
+                <div class="LineLogo" style="height: 25%;">
+                  <div class="LogoCard">
+                    <img src="images/empresa2.png">
+                  </div>
+                  <div class="TextCard">
+                    <span>A empresa <span class="u-fontBold">Innovatis</span> procura fornecer soluções em informática que tenham um forte comprometimento com o meio ambiente.</span>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+
+                  <div style="margin-left: 15px; text-align: center;">
+
+                    <div class="TitleDescription">Desenvolvimento web
+
+                      <span class="stars" style="margin-left: 10px">
+                        <i data-toggle="tooltip" class="glyphicon glyphicon-info-sign tooltip-right" style="margin: 3px 0 0 5px; font-size: 15px; color: #66b3f9; cursor:pointer;" title="Avaliação baseada em pesquisa interna feita pelo TECNOPUC com base nas competências"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                      </span>
+
+                    </div>
+
+                    <!-- stars -->
+
+                    <!-- .stars -->
+
+                    <!-- </div> -->
+                  </div>
+                </div>
+                <div class="LineDescription">
+
+
+                  <div class="TitleDescription" style="margin-bottom: 5px">Demais competências
+
+
+                    <!-- BOOTSNIPP -->
+
+
+                    <!-- <div class="container"> -->
+
+
+
+                    <!-- BOOTSNIPP -->
+
+                  </div>
+                  <div class="LineList">
+                    <div class="List">
+                      <ul>
+                        <li>Código aberto</li>
+                        <li>Desenvolvimento</li>
+                        <li>Design responsivo</li>
+                      </ul>
+                    </div>
+                    <div class="List">
+                      <ul>
+                        <li>Desenvolvimento Java</li>
+                        <li> Estratégia Digital</li>
+                        <li>Inteligência artificial</li>
+                      </ul>
+
+                    </div>
+                    <div class="List">
+                      <ul>
+                        <li>Marketing digital</li>
+                        <li>Testes com consumidores</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Inicio FOOTER -->
+              <div class="CardFooter" style="margin-left: 14px;">
+                <div class="Contact">
+                  <div>
+                    <span style="font-size=1em; line-height:1.4em;">
+                      <b>Fernando Silveira
+                      </span></br>
+                      <span style="font-size=1em; line-height:1.4em;">
+                        sfernando@innovatis.com
+                      </span>
+                    </div>
+                    <div>
+                      <span style="font-size=1em; line-height:1.4em;">
+                        (51) 84265-5465
+                      </span></br>
+                      <span style="font-size=1em; line-height:1.4em;">
+                        www.innovatis.com.br</b>
+                      </span>
+                    </div>
+
+                    <button data-toggle="tooltip" title="Envia uma mensagem à empresa requerindo uma parceria! " class="magic-button btn-primary" id="magic-button-2" onclick="change" style="border-radius:5px">Contatar</button><br>
+
+                  </div>
+                </div>
+                <!-- Fim FOOTER -->
+              </div>
+              <!-- FIM CARD 2 -->
+
+
+            </div>
+
+
+
+            <div class="CardLine">
+
+
+              <!--CARD 3-->
+              <div class="Card listaCard">
+                <div class="CardContent">
+                  <span class="u-fontBold" style="margin-top: 10px; font-size:20px;">ExtraBits</span>
+                  <div class="LineLogo" style="height: 25%;">
+                    <div class="LogoCard">
+                      <img src="images/empresa3.png">
+                    </div>
+                    <div class="TextCard">
+                      <span>A empresa <span class="u-fontBold">ExtraBits</span> se diferencia pela segurança e confiabilidade das operações em TI. Entregando os serviços com transparência e eficiência.</span>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top:20px;">
+
+                    <div style="margin-left: 15px; text-align: center;">
+
+                      <div class="TitleDescription">Desenvolvimento web
+
+                        <span class="stars" style="margin-left: 10px">
+                          <i data-toggle="tooltip" class="glyphicon glyphicon-info-sign tooltip-right" style="margin: 3px 0 0 5px; font-size: 15px; color: #66b3f9; cursor:pointer;" title="Avaliação baseada em pesquisa interna feita pelo TECNOPUC com base nas competências"></i>
+                          <i class="glyphicon glyphicon-star cinza"></i>
+                          <i class="glyphicon glyphicon-star" ></i>
+                          <i class="glyphicon glyphicon-star" ></i>
+                          <i class="glyphicon glyphicon-star" ></i>
+                          <i class="glyphicon glyphicon-star" ></i>
+                        </span>
+
+                      </div>
+
+                      <!-- stars -->
+
+                      <!-- .stars -->
+
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                  <div class="LineDescription">
+
+                    <div class="TitleDescription" style="margin-bottom: 5px">Competências
+
+
+                      <!-- BOOTSNIPP -->
+
+
+                      <!-- <div class="container"> -->
+
+
+
+                      <!-- BOOTSNIPP -->
+
+                    </div>
+                    <div class="LineList">
+                      <div class="List">
+                        <ul>
+                          <li>Código aberto</li>
+                          <li>Desenvolvimento</li>
+                          <li style="font-weight: bold;">Desenvolvimento web</li>
+                        </ul>
+                      </div>
+                      <div class="List">
+                        <ul>
+                          <li>Integração contínua</li>
+                          <li>Inteligência artificial</li>
+                          <li>Marketing digital</li>
+                        </ul>
+
+                      </div>
+                      <div class="List">
+                        <ul>
+                          <li> Prototipagem rápida</li>
+                          <li>Segurança de Informação</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Inicio FOOTER -->
+                <div class="CardFooter" style="margin-left: 14px;">
+                  <div class="Contact">
+                    <div>
+                      <span style="font-size=1em; line-height:1.4em;">
+                        <b>Paula Warzak
+                        </span></br>
+                        <span style="font-size=1em; line-height:1.4em;">
+                          paulo_warzak@extrabits.com
+                        </span>
+                      </div>
+                      <div>
+                        <span style="font-size=1em; line-height:1.4em;">
+                          (51) 92165-1569
+                        </span></br>
+                        <span style="font-size=1em; line-height:1.4em;">
+                          www.extrabits.com.br</b>
+                        </span>
+                      </div>
+
+                      <button data-toggle="tooltip" title="Envia uma mensagem à empresa requerindo uma parceria!" class="magic-button btn-primary" id="magic-button-3" onclick="change" style="border-radius:5px">Contatar</button><br>
+
+                    </div>
+                  </div>
+                  <!-- Fim FOOTER -->
+
+
+
+                </div>
+                <!-- FIM CARD 3 -->
+
+
+
+
+                <!--CARD 4-->
+                <div class="Card listaCard">
+                  <div class="CardContent">
+                    <span class="u-fontBold" style="margin-top: 10px; font-size:20px;">DataPrime</span>
+                    <div class="LineLogo" style="height: 25%;">
+                      <div class="LogoCard">
+                        <img src="images/empresa4.png">
+                      </div>
+                      <div class="TextCard">
+                        <span>A empresa <span class="u-fontBold">DataPrime</span> é uma provedora de soluções em consultoria, serviços de tecnologia e software.</span>
+                      </div>
+
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+
+                      <div style="margin-left: 15px; text-align: center;">
+
+                        <div class="TitleDescription">Desenvolvimento web
+
+                          <span class="stars" style="margin-left: 10px">
+                            <i data-toggle="tooltip" class="glyphicon glyphicon-info-sign tooltip-right" style="margin: 3px 0 0 5px; font-size: 15px; color: #66b3f9; cursor:pointer;" title="Avaliação baseada em pesquisa interna feita pelo TECNOPUC com base nas competências"></i>
+                            <i class="glyphicon glyphicon-star cinza"></i>
+                            <i class="glyphicon glyphicon-star cinza" ></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+                          </span>
+                        </div>
+
+                        <!-- stars -->
+
+                        <!-- .stars -->
+
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                    <div class="LineDescription">
+
+                      <div class="TitleDescription" style="margin-bottom: 5px">Demais competências
+
+
+                        <!-- BOOTSNIPP -->
+
+
+                        <!-- <div class="container"> -->
+
+
+
+                        <!-- BOOTSNIPP -->
+
+                      </div>
+                      <div class="LineList">
+                        <div class="List">
+                          <ul>
+                            <li>Código aberto</li>
+                            <li style="font-weight: bold;">Desenvolvimento web</li>
+                          </ul>
+                        </div>
+                        <div class="List">
+                          <ul>
+                            <li>Design de experiência</li>
+                            <li>Integração contínua</li>
+                          </ul>
+
+                        </div>
+                        <div class="List">
+                          <ul>
+                            <li>Inteligência artificial</li>
+                            <li>Nuvem</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <!-- Inicio FOOTER -->
+                  <div class="CardFooter" style="margin-left: 14px;">
+                    <div class="Contact">
+                      <div>
+                        <span style="font-size=1em; line-height:1.4em;">
+                          <b>Roger Castilhos
+                          </span></br>
+                          <span style="font-size=1em; line-height:1.4em;">
+                            castilhosr@dataprime.com
+                          </span>
+                        </div>
+                        <div>
+                          <span style="font-size=1em; line-height:1.4em;">
+                            (51) 95412-5445
+                          </span></br>
+                          <span style="font-size=1em; line-height:1.4em;">
+                            www.dataprime.com</b>
+                          </span>
+                        </div>
+
+                        <button data-toggle="tooltip" title="Envia uma mensagem à empresa requerindo uma parceria! " class="magic-button btn-primary" id="magic-button-4" onclick="change" style="border-radius:5px">Contatar</button><br>
+
+                      </div>
+                    </div>
+                    <!-- Fim FOOTER -->
+
+                  </div>
+                  <!-- FIM CARD 4 -->
+
+                </DIC>
+              </section>
+            </section>
+
+            <div class="container">
+              <ul class="pagination">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li class="disabled"><a href="#">2</a></li>
+                <li class="disabled"><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li class="disabled"><a href="#">5</a></li>
+                <li class="disabled"><a href="#">»</a></li>
+              </ul>
+            </div>
+
+
+          </body>
+          <script src="js/index.js"></script>
+          <script src="js/modal.js"></script>
+          </html>

@@ -1,0 +1,198 @@
+.my-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content h2 {
+  margin-top: 40px;
+  margin-bottom: 25px;
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 20px 10px;
+  border: 1px solid #888;
+  width: 40%;
+  min-height: 395px;
+}
+
+.modal-content .LineDescription{
+  padding-top: 15px;
+  margin-top: -20px;
+}
+
+.modal-content textarea {
+  width: 310px;
+  height: 100px;
+  margin: 8px 0px;
+  font-style: italic;
+  color: rgba(115,115,115,1);
+  padding: 7px 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.pa {
+  font-size: 17px;
+}
+
+/* Botão magico na modal*/
+
+.magic-button-modal1 {
+  background-color: #3D8EB9;
+  border: 2px solid gray;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  margin-left: 176px;
+  margin-top: 25px;
+}
+
+.magic-button-modal1:hover {
+  background-color: #3D8EB9;
+  color: rgba(48, 91, 159, 1);
+}
+
+.success-message-modal1 {
+  color: rgba(0, 128, 0, 1);
+  display: none;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-left: 80px;
+}
+
+
+.magic-button-modal2 {
+  background-color: #3D8EB9;
+  border: 2px solid gray;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  margin-left: 176px;
+  margin-top: 25px;
+}
+
+.magic-button-modal2:hover {
+  background-color: #3D8EB9;
+  color: rgba(48, 91, 159, 1);
+}
+
+.success-message-modal2 {
+  color: rgba(0, 128, 0, 1);
+  display: none;
+  font-size: 26px;
+  padding-left: 15px;
+  margin-left: 200px;
+}
+
+.magic-button-modal3 {
+  background-color: #3D8EB9;
+  border: 2px solid gray;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  margin-left: 176px;
+  margin-top: 25px;
+}
+
+.magic-button-modal3:hover {
+  background-color: #3D8EB9;
+  color: rgba(48, 91, 159, 1);
+}
+
+.success-message-modal3 {
+  color: rgba(0, 128, 0, 1);
+  display: none;
+  font-size: 26px;
+  padding-left: 15px;
+  margin-left: 200px;
+}
+
+.magic-button-modal4 {
+  background-color: #3D8EB9;
+  border: 2px solid gray;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  margin-left: 176px;
+  margin-top: 25px;
+}
+
+.magic-button-modal4:hover {
+  background-color: #3D8EB9;
+  color: rgba(48, 91, 159, 1);
+}
+
+.success-message-modal4 {
+  color: rgba(0, 128, 0, 1);
+  display: none;
+  font-size: 26px;
+  padding-left: 15px;
+  margin-left: 200px;
+}
+
+/**/
+
+.btn-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.botaoLimpa{
+  background-color: white;
+  border: 1px solid #337ab7;
+  border-radius: 4px;
+  color: #337ab7;
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  margin-left: 210px;
+  margin-top: -7px;
+  margin-bottom: 8px;
+}
+
+.botaoLimpa:hover{
+  background-color: #337ab7;
+  color: rgba(255, 255, 255, 1);
+
+}

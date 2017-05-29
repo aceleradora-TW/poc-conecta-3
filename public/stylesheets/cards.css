@@ -1,0 +1,268 @@
+
+.Text{
+	width: 100%;
+	height: 7%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5em;
+
+}
+
+.BoxCards{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+
+}
+.SectionCards{
+	width: 100%;
+	height: 115vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #E0E0E0;
+}
+.CardLine{
+	position: relative;
+	width: 95%;
+	height: 48%;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+
+
+}
+.Card{
+	border-radius: 5px;
+	width: 47%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 2px 2px #efe5e5;
+
+}
+.CardTitle{
+
+	border-radius: 5px;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2em;
+	color: white;
+	align-items: center;
+	background-color: #3a71c7;
+
+}
+.CardContent{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 80%;
+
+}
+.CardFooter{
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Contact{
+	line-height: 1.4em;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.ButtonBox{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ButtonPrimary{
+	width: 25%;
+	height: 95%;
+	background-color: #3a71c7;
+	border-radius: 7px;
+	margin-right: 10px;
+}
+.LineLogo{
+	width: 100%;
+	height: 35%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+.LineDescription{
+	width: 98%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 7px;
+	box-shadow: 0px 2px 0px 2px #e0e0e0;
+	border: none;
+}
+.TitleDescription{
+	width: 100%;
+	height: 10%;
+	font-weight: bold;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 19px !important;
+}
+.LineList{
+	width: 100%;
+	height: 75%;
+	display: flex;
+	border: none;
+	flex-direction: row;
+}
+.LogoCard{
+	width: 20%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+/*.TextCard{
+text-align: center;
+width: 70%;
+height: 100%;
+/*display: flex;
+justify-content: center;
+align-items: center;
+line-height: 1.5em;
+font-size: 0.9em;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-color: white;
+
+}*/
+
+
+
+
+.TextCard {
+	text-align: center;
+	width: 70%;
+	height: 100%;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5em;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: white;
+	margin-top: 50px;
+}
+.List{
+	width: 32%;
+	height: 90%;
+	/*background-color: #f9f9f9;*/
+}
+
+.u-fontBold{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+li{
+	line-height: 1.5em;
+	font-weight: lighter;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* BOTAO MAGICO DA GURIZADA */
+
+.magic-button {
+/*
+	background-color: #3D8EB9;
+	border: 2px solid gray;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+	font-size: 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;*/
+
+
+
+}
+
+.magic-button:hover {
+	background-color: #3D8EB9;
+	color: rgba(48, 91, 159, 1);
+}
+
+.success-message {
+	color: rgba(0, 128, 0, 1);
+	display: none;
+	font-size: 16px;
+	padding-left: 15px;
+	margin-right: 25px;
+}
+
+
+/**/
+
+
+.stars {
+	display: inline-flex;
+	flex-direction: row-reverse;
+	margin: 10px;
+	color: gold;
+}
+
+.glyphicon {
+	font-size: 20px;
+}
+
+.cinza {
+	color: lightgray;
+}
+
+.numAvaliacao {
+	color: gray;
+
+}
+
+/**/
+
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0px 20px 436px !important;
+	border-radius: 4px;
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+	display: block;
+}
+
+.TextResult{
+	font-size: 306px;
+}
