@@ -59,7 +59,7 @@
           <!-- INICIO STEP 1 -->
           <div class="row setup-content" id="step-1" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
-              <div class="col-md-12">
+              <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
                 <h3>Empresa</h3>
                 <div class="form-group">
                   <label class="control-label">CNPJ</label>
@@ -88,7 +88,7 @@
           <!-- INICIO STEP 2 -->
           <div class="row setup-content" id="step-2" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
-              <div class="col-md-12">
+              <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
                 <h3>Responsável</h3>
                 <div class="form-group">
                   <label class="control-label">Nome do Responsável</label>
@@ -119,7 +119,7 @@
           <!-- INICO STEP 3 -->
           <div class="row setup-content" id="step-3" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
-              <div class="col-md-12">
+              <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
                 <h3>Habilidades</h3>
                 <div class="form-group">
                   <label class="control-label">Área</label>
@@ -131,28 +131,75 @@
                     <option value="ti-comunicação">Tecnologia da Informação e Comunicação</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <label class="control-label">Segmento</label>
-                  <select id="selectbasic" name="selectbasic" class="form-control">
-                    <option value="">Escolha um segmento</option>
-                    <option value="agronegocios">Agronegócios</option>
-                    <option value="calcados">Calçados</option>
-                    <option value="educacao">Educação</option>
-                    <option value="eletromecanica">Eletromecânica</option>
-                    <option value="energia">Energia</option>
-                    <option value="financas">Finanças</option>
-                    <option value="hardware">Hardware</option>
-                    <option value="industria-criativa">Indústria Criativa</option>
-                    <option value="meio-ambiente">Meio ambiente</option>
-                    <option value="software">Software</option>
-                  </select>
-                </div>
+
 
                 <div class="form-group">
-                  <input name="Name" value="termos" type="checkbox">
-                  <label class="control-label" style="padding-left: 1vw;">Aceito os termos de uso</label>
+                  <label class="control-label">Segmento</label><br>
+
+                  <div class="col-md-4">
+                    <input type="checkbox"> Agronegócios<br>
+                    <input type="checkbox"> Calçados<br>
+                    <input type="checkbox"> Educação<br>
+                    <input type="checkbox"> Eletromecânica<br>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="checkbox"> Energia<br>
+                    <input type="checkbox"> Finanças<br>
+                    <input type="checkbox"> Hardware<br>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="checkbox"> Indústria Criativa<br>
+                    <input type="checkbox"> Meio ambiente<br>
+                    <input type="checkbox"> Software<br>
+                  </div>
                 </div>
-                <button class="btn btn-success btn-lg pull-right" type="submit">Próximo</button>
+
+                <br><br><br><br><br>
+
+                <label class="control-label">Competência</label>
+                <div class="form-group">
+                  <div class="col-md-4">
+                    <div id="pai-1" class="div-pai">Hardware</div>
+                    <div id="filho-1"class="div-filho" style="display: none;">
+                      <input type="checkbox"> Outsourcing<br>
+                      <input type="checkbox"> Robôs<br>
+                      <input type="checkbox"> Escalabilidade<br>
+                      <input type="checkbox"> Integração<br>
+                      <input type="checkbox"> Qualidade<br>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div  id="pai-2" class="div-pai">Software</div>
+                    <div  id="filho-2"class="div-filho" style="display: none;">
+                      <input type="checkbox"> Desenvolvimento SW Client Server<br>
+                      <input type="checkbox"> Engenharia de Requisitos<br>
+                      <input type="checkbox"> Tecnologia Big data<br>
+                      <input type="checkbox"> Tecnologia Data warehousing<br>
+                      <input type="checkbox"> Metodologias Waterfall<br>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div id="pai-3" class="div-pai">Serviços
+                      <div id="filho-3" class="div-filho" style="display: none;">
+                        <input type="checkbox"> Consultoria<br>
+                        <input type="checkbox"> Relações publicas<br>
+                        <input type="checkbox"> Documentação<br>
+                        <input type="checkbox"> Internet das coisas <br>
+                        <input type="checkbox"> Games<br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br><br><br>
+                <br><br><br><br><br>
+                <div class="form-group">
+                  <input id="checkbox" name="termos" value="termos" type="checkbox" required="required">
+                  <label class="control-label"> Aceito os termos de uso</label>
+                </div>
+                <button id="buttonAlert" class="btn btn-success btn-lg pull-right" type="submit">Cadastrar</button>
               </div>
             </div>
           </div>
@@ -163,19 +210,9 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
   <script>
+
   $(document).ready(function () {
     var navListItems = $('div.setup-panel div a'),
     allWells = $('.setup-content'),
@@ -208,12 +245,12 @@
       nextStepWizard.removeClass("disabled");
 
 
-      for(var i=0; i<curInputs.length; i++){
-        if (!curInputs[i].validity.valid){
-          isValid = false;
-          $(curInputs[i]).closest(".form-group").addClass("has-error");
-        }
-      }
+      // for(var i=0; i<curInputs.length; i++){
+      //   if (!curInputs[i].validity.valid){
+      //     isValid = false;
+      //     $(curInputs[i]).closest(".form-group").addClass("has-error");
+      //   }
+      // }
 
       if (isValid)
       nextStepWizard.removeAttr('disabled').trigger('click');
@@ -222,6 +259,23 @@
     $('div.setup-panel div a.btn-primary').trigger('click');
   });
 
+
+  $('#pai-1').click(function(){
+    $('#filho-1').slideToggle();
+  });
+  $('#pai-2').click(function(){
+    $('#filho-2').slideToggle();
+  });
+  $('#pai-3').click(function(){
+    $('#filho-3').slideToggle();
+  });
+
+
+  $(document).ready(function(){
+    $("#buttonAlert").click(function(){
+      alert("Cadastrado com sucesso! :D");
+    });
+  });
 
   </script>
 
