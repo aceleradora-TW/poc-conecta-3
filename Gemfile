@@ -5,7 +5,7 @@ gem 'sinatra-contrib'
 
 gem 'rake'
 
-gem 'puma'
+gem 'thin'
 gem 'tux'
 
 group :development,:test do
