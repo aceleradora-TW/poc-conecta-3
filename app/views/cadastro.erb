@@ -45,11 +45,11 @@
               <p>Empresa</p>
             </div>
             <div class="stepwizard-step">
-              <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+              <a href="#step-2" id="step-2-teste" type="button" class="btn btn-default btn-circle disabled" disabled="disabled">2</a>
               <p>Responsável</p>
             </div>
             <div class="stepwizard-step">
-              <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+              <a href="#step-3" id="step-3-teste" type="button" class="btn btn-default btn-circle disabled" disabled="disabled">3</a>
               <p>Habilidades</p>
             </div>
           </div>
@@ -71,12 +71,14 @@
                 </div>
                 <div class="form-group">
                   <label class="control-label">Senha</label>
-                  <input type="password" required="required" class="form-control" placeholder="Senha" >
+                  <input type="password" required="required" class="form-control" placeholder="Senha"/>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Confirmar Senha</label>
-                  <input type="password" required="required" class="form-control" placeholder="Confirmar senha" >
+                  <input type="password" required="required" class="form-control" placeholder="Confirmar senha"/>
                 </div>
+
+
                 <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
               </div>
             </div>
@@ -90,11 +92,11 @@
                 <h3>Responsável</h3>
                 <div class="form-group">
                   <label class="control-label">Nome do Responsável</label>
-                  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome" />
+                  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Email</label>
-                  <input maxlength="200" type="email" required="required" class="form-control" placeholder="Ex: mayra@test.com"  />
+                  <input maxlength="100" type="email" required="required" class="form-control" placeholder="Ex: mayra@test.com"/>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Telefone</label>
@@ -145,7 +147,7 @@
                     <option value="software">Software</option>
                   </select>
                 </div>
-                
+
                 <div class="form-group">
                   <input name="Name" value="termos" type="checkbox">
                   <label class="control-label" style="padding-left: 1vw;">Aceito os termos de uso</label>
@@ -199,10 +201,13 @@
       var curStep = $(this).closest(".setup-content"),
       curStepBtn = curStep.attr("id"),
       nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-      curInputs = curStep.find("input[type='text'],input[type='url']"),
+      curInputs = curStep.find("input"),
       isValid = true;
 
       $(".form-group").removeClass("has-error");
+      nextStepWizard.removeClass("disabled");
+
+
       for(var i=0; i<curInputs.length; i++){
         if (!curInputs[i].validity.valid){
           isValid = false;
