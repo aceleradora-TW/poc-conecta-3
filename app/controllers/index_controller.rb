@@ -13,3 +13,7 @@ end
 get '/avaliacao' do
   erb :avaliacao
 end
+
+get '/cadastro' do
+  erb :cadastro
+end
