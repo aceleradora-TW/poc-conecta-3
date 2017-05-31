@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <form role="form" action="" method="post">
+        <form role="form" action="/" method="get">
           <!-- INICIO STEP 1 -->
           <div class="row setup-content" id="step-1" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
@@ -195,9 +195,9 @@
                 </div>
                 <br><br><br><br><br>
                 <br><br><br><br><br>
-                <div class="form-group">
-                  <input id="checkbox" name="termos" value="termos" type="checkbox" required="required">
-                  <label class="control-label"> Aceito os termos de uso</label>
+                <div class="form-group flex-box">
+                  <input class='form-control check-test' id="checkbox" name="termos" value="termos" type="checkbox" required="required">
+                  <label class="control-label check-label" for="checkbox"> Aceito os termos de uso</label>
                 </div>
                 <button id="buttonAlert" class="btn btn-success btn-lg pull-right" type="submit">Cadastrar</button>
               </div>
@@ -210,7 +210,7 @@
     </div>
   </section>
 
-  
+
   <script>
 
   $(document).ready(function () {
@@ -238,19 +238,19 @@
       var curStep = $(this).closest(".setup-content"),
       curStepBtn = curStep.attr("id"),
       nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-      curInputs = curStep.find("input"),
+      curInputs = curStep.find(".form-control");
       isValid = true;
 
       $(".form-group").removeClass("has-error");
       nextStepWizard.removeClass("disabled");
 
 
-      // for(var i=0; i<curInputs.length; i++){
-      //   if (!curInputs[i].validity.valid){
-      //     isValid = false;
-      //     $(curInputs[i]).closest(".form-group").addClass("has-error");
-      //   }
-      // }
+      for(var i=0; i<curInputs.length; i++){
+        if (!curInputs[i].validity.valid){
+          isValid = false;
+          $(curInputs[i]).closest(".form-group").addClass("has-error");
+        }
+      }
 
       if (isValid)
       nextStepWizard.removeAttr('disabled').trigger('click');
@@ -270,10 +270,13 @@
     $('#filho-3').slideToggle();
   });
 
-
   $(document).ready(function(){
     $("#buttonAlert").click(function(){
-      alert("Cadastrado com sucesso! :D");
+      // console.log($('.form-control')[10]);
+      if($('.form-control')[10].checked){
+        alert("Cadastrado com sucesso! :D");
+        // window.location.replace('../');
+      }
     });
   });
 
