@@ -11,7 +11,7 @@ body{
 	font-weight: lighter;
 }
 .NavLogo{
-	width: 40%;
+	width: 15%;
 	height: 100%;
 	font-family: 'Lobster', cursive;
 	font-size: 4em;
@@ -26,20 +26,20 @@ body{
 	color: #3D8EB9;
 }
 .NavLinks{
-	width: 60%;
+	width: 85%;
 	height: 100%;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: row;
 	list-style: none;
 	align-items: center;
-	padding-right: 10%;
+	padding-right: 2%;
 	list-style: none;
 	align-items: center;
 	color: white;
 }
 .Link{
-	width: 24%;
+	width: 15%;
 	height: 60%;
 	display: flex;
 	align-items: center;
@@ -48,6 +48,19 @@ body{
 	color: white;
 
 }
+.Link--search{
+	width: 25%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+}
+.Link--search:hover{
+background-color: rgba(0,0,0,0.6);
+}
+
 .Link:hover{
 	background-color: rgba(0,0,0,0.6);
 }
