@@ -16,6 +16,16 @@
   text-decoration: none;
 }
 
+.ButtonNew {
+	background-color: transparent;
+	color: #000 !important;
+}
+
+.ButtonNew:hover, .ButtonNew:focus {
+	color: #fff !important;
+	border: none !important;
+}
+
 .Button{
 	width: 18.6%;
 	height: 90%;

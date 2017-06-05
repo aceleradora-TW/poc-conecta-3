@@ -93,8 +93,22 @@
                   <label class="control-label">Nome do Contato</label>
                   <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
                 </div>
+                <button class="btn ButtonNew" type="button" data-toggle="collapse" data-target="#newName" aria-expanded="false">
+                  + inserir outro contato
+                </button>
+                <div class="form-group collapse" id="newName">
+                  <label class="control-label">Nome do Contato Secundário</label>
+                  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
+                </div>
                 <div class="form-group">
                   <label class="control-label">E-mail</label>
+                  <input maxlength="100" type="email" required="required" class="form-control" placeholder="Ex: email@email.com"/>
+                </div>
+                <button class="btn ButtonNew" type="button" data-toggle="collapse" data-target="#newEmail" aria-expanded="false">
+                  + inserir outro e-mail
+                </button>
+                <div class="form-group collapse" id="newEmail">
+                  <label class="control-label">E-mail alternativo</label>
                   <input maxlength="100" type="email" required="required" class="form-control" placeholder="Ex: email@email.com"/>
                 </div>
                 <div class="form-group">
