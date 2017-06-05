@@ -18,8 +18,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 </head>
 <body>
   <section class="Section">
@@ -46,12 +44,12 @@
               <p>Empresa</p>
             </div>
             <div class="stepwizard-step">
-              <a href="#step-2" id="step-2-teste" type="button" class="btn btn-default btn-circle disabled" disabled="disabled">2</a>
+              <a href="#step-2" id="step-2-teste" type="button" class="btn btn-default btn-circle disabled">2</a>
               <p>Responsável</p>
             </div>
             <div class="stepwizard-step">
-              <a href="#step-3" id="step-3-teste" type="button" class="btn btn-default btn-circle disabled" disabled="disabled">3</a>
-              <p>Habilidades</p>
+              <a href="#step-3" id="step-3-teste" type="button" class="btn btn-default btn-circle disabled">3</a>
+              <p>Capacidades</p>
             </div>
           </div>
         </div>
@@ -90,18 +88,18 @@
           <div class="row setup-content" id="step-2" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
               <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
-                <h3>Responsável</h3>
+                <h3>Responsável pela empresa</h3>
                 <div class="form-group">
                   <label class="control-label">Nome do Responsável</label>
                   <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Email</label>
-                  <input maxlength="100" type="email" required="required" class="form-control" placeholder="Ex: mayra@test.com"/>
+                  <input maxlength="100" type="email" required="required" class="form-control" placeholder="Ex: email@email.com"/>
                 </div>
                 <div class="form-group">
                   <label class="control-label">Telefone</label>
-                  <input maxlength="200" type="number" required="required" class="form-control" placeholder="Ex: (99) 9999-9999"  />
+                  <input maxlength="200" type="number" required="required" class="form-control" placeholder="Ex: 51-9999-9999"  />
                 </div>
                 <div class="form-group">
                   <label class="control-label">Site</label>
@@ -121,7 +119,7 @@
           <div class="row setup-content" id="step-3" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
               <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
-                <h3>Habilidades</h3>
+                <h3>Capacidades da empresa</h3>
                 <div class="form-group">
                   <label class="control-label">Área</label>
                   <select required="required" id="selectbasic" name="selectbasic" class="form-control">
@@ -160,7 +158,9 @@
                 <label class="control-label">Competência</label>
                 <div class="form-group">
                   <div class="col-md-4">
-                    <div id="pai-1" class="div-pai">Hardware</div>
+                    <div id="pai-1" style="display: inline-flex; cursor: pointer;">
+                      <div class="div-pai">Hardware</div> <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
                     <div id="filho-1"class="div-filho" style="display: none;">
                       <input type="checkbox"> Outsourcing<br>
                       <input type="checkbox"> Robôs<br>
@@ -171,7 +171,9 @@
                   </div>
 
                   <div class="col-md-4">
-                    <div  id="pai-2" class="div-pai">Software</div>
+                    <div id="pai-2" style="display: inline-flex; cursor: pointer;">
+                      <div  id="pai-2" class="div-pai">Software  </div><i class="material-icons">keyboard_arrow_down</i>
+                    </div>
                     <div  id="filho-2"class="div-filho" style="display: none;">
                       <input type="checkbox"> Desenvolvimento SW Client Server<br>
                       <input type="checkbox"> Engenharia de Requisitos<br>
@@ -183,14 +185,15 @@
 
 
                   <div class="col-md-4">
-                    <div id="pai-3" class="div-pai">Serviços
-                      <div id="filho-3" class="div-filho" style="display: none;">
-                        <input type="checkbox"> Consultoria<br>
-                        <input type="checkbox"> Relações publicas<br>
-                        <input type="checkbox"> Documentação<br>
-                        <input type="checkbox"> Internet das coisas <br>
-                        <input type="checkbox"> Games<br>
-                      </div>
+                    <div id="pai-3" style="display: inline-flex; cursor: pointer;">
+                      <div id="pai-3" class="div-pai">Serviços </div><i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div id="filho-3" class="div-filho" style="display: none;">
+                      <input type="checkbox"> Consultoria<br>
+                      <input type="checkbox"> Relações publicas<br>
+                      <input type="checkbox"> Documentação<br>
+                      <input type="checkbox"> Internet das coisas <br>
+                      <input type="checkbox"> Games<br>
                     </div>
                   </div>
                 </div>
@@ -210,78 +213,6 @@
       <!-- fim formulario -->
     </div>
   </section>
-
-
-  <script>
-
-  $(document).ready(function () {
-    var navListItems = $('div.setup-panel div a'),
-    allWells = $('.setup-content'),
-    allNextBtn = $('.nextBtn');
-
-    allWells.hide();
-
-    navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
-      $item = $(this);
-
-      if (!$item.hasClass('disabled')) {
-        navListItems.removeClass('btn-primary').addClass('btn-default');
-        $item.addClass('btn-primary');
-        allWells.hide();
-        $target.show();
-        $target.find('input:eq(0)').focus();
-      }
-    });
-
-    allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content"),
-      curStepBtn = curStep.attr("id"),
-      nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-      curInputs = curStep.find(".form-control");
-      isValid = true;
-
-      $(".form-group").removeClass("has-error");
-      nextStepWizard.removeClass("disabled");
-
-
-      for(var i=0; i<curInputs.length; i++){
-        if (!curInputs[i].validity.valid){
-          isValid = false;
-          $(curInputs[i]).closest(".form-group").addClass("has-error");
-        }
-      }
-
-      if (isValid)
-      nextStepWizard.removeAttr('disabled').trigger('click');
-    });
-
-    $('div.setup-panel div a.btn-primary').trigger('click');
-  });
-
-
-  $('#pai-1').click(function(){
-    $('#filho-1').slideToggle();
-  });
-  $('#pai-2').click(function(){
-    $('#filho-2').slideToggle();
-  });
-  $('#pai-3').click(function(){
-    $('#filho-3').slideToggle();
-  });
-
-  $(document).ready(function(){
-    $("#buttonAlert").click(function(){
-      // console.log($('.form-control')[10]);
-      if($('.form-control')[10].checked){
-        alert("Cadastrado com sucesso!");
-        // window.location.replace('../');
-      }
-    });
-  });
-
-  </script>
-
+  <script type="text/javascript" src="/js/cadastro.js"></script>
 </body>
 </html>
