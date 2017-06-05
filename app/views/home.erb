@@ -13,11 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-
-
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="material-icons">arrow_upward</i>
+  </button>
   <section class="Section">
     <div class="SectionOpacity">
       <div class="Navbar">
@@ -241,6 +241,21 @@
 
 </section>
 
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
