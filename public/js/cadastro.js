@@ -44,17 +44,6 @@ $(document).ready(function () {
   $('div.setup-panel div a.btn-primary').trigger('click');
 });
 
-
-$('#pai-1').click(function(){
-  $('#filho-1').slideToggle();
-});
-$('#pai-2').click(function(){
-  $('#filho-2').slideToggle();
-});
-$('#pai-3').click(function(){
-  $('#filho-3').slideToggle();
-});
-
 $(document).ready(function(){
   $("#buttonAlert").click(function(){
     // console.log($('.form-control')[10]);

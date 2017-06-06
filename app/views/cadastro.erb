@@ -49,7 +49,7 @@
             </div>
             <div class="stepwizard-step">
               <a href="#step-3" id="step-3-teste" type="button" class="btn btn-default btn-circle disabled">3</a>
-              <p>Capacidades</p>
+              <p>Negócio</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@
               <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
                 <h3>Empresa</h3>
                 <div class="form-group">
-                  <label class="control-label">Nome da Empresa</label>
+                  <label class="control-label">Nome da empresa (nome fantasia)</label>
                   <input maxlength="100" type="text" required="required" class="form-control" placeholder="Ex: ThoughtWorks" />
                 </div>
                 <div class="form-group">
@@ -90,14 +90,14 @@
               <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
                 <h3>Contato para negócios</h3>
                 <div class="form-group">
-                  <label class="control-label">Nome do Contato</label>
+                  <label class="control-label">Nome do contato</label>
                   <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
                 </div>
                 <button class="btn ButtonNew" type="button" data-toggle="collapse" data-target="#newName" aria-expanded="false">
                   + inserir outro contato
                 </button>
                 <div class="form-group collapse" id="newName">
-                  <label class="control-label">Nome do Contato Secundário</label>
+                  <label class="control-label">Nome do outro contato</label>
                   <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nome"/>
                 </div>
                 <div class="form-group">
@@ -133,7 +133,7 @@
           <div class="row setup-content" id="step-3" style="color: white;">
             <div class="col-xs-6 col-md-offset-3">
               <div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.3); padding-bottom: 3vh; border-radius: 1%;">
-                <h3>Capacidades da empresa</h3>
+                <h3>Negócio da empresa</h3>
                 <div class="form-group">
                   <label class="control-label">Área</label>
                   <select required="required" id="selectbasic" name="selectbasic" class="form-control">
@@ -172,10 +172,10 @@
                 <label class="control-label">Competência</label>
                 <div class="form-group">
                   <div class="col-md-4">
-                    <div id="pai-1" style="display: inline-flex; cursor: pointer;">
-                      <div class="div-pai">Hardware</div> <i class="material-icons">keyboard_arrow_down</i>
+                    <div id="pai-1" style="display: inline-flex; font-weight: bold;">
+                      <div class="div-pai">Hardware</div>
                     </div>
-                    <div id="filho-1"class="div-filho" style="display: none;">
+                    <div id="filho-1" class="div-filho" >
                       <input type="checkbox"> Outsourcing<br>
                       <input type="checkbox"> Robôs<br>
                       <input type="checkbox"> Escalabilidade<br>
@@ -185,10 +185,10 @@
                   </div>
 
                   <div class="col-md-4">
-                    <div id="pai-2" style="display: inline-flex; cursor: pointer;">
-                      <div  id="pai-2" class="div-pai">Software  </div><i class="material-icons">keyboard_arrow_down</i>
+                    <div id="pai-2" style="display: inline-flex; font-weight: bold;">
+                      <div  id="pai-2" class="div-pai">Software</div>
                     </div>
-                    <div  id="filho-2"class="div-filho" style="display: none;">
+                    <div  id="filho-2"class="div-filho">
                       <input type="checkbox"> Desenvolvimento SW Client Server<br>
                       <input type="checkbox"> Engenharia de Requisitos<br>
                       <input type="checkbox"> Tecnologia Big data<br>
@@ -199,10 +199,10 @@
 
 
                   <div class="col-md-4">
-                    <div id="pai-3" style="display: inline-flex; cursor: pointer;">
-                      <div id="pai-3" class="div-pai">Serviços </div><i class="material-icons">keyboard_arrow_down</i>
+                    <div id="pai-3" style="display: inline-flex; font-weight: bold;">
+                      <div id="pai-3" class="div-pai">Serviços</div>
                     </div>
-                    <div id="filho-3" class="div-filho" style="display: none;">
+                    <div id="filho-3" class="div-filho">
                       <input type="checkbox"> Consultoria<br>
                       <input type="checkbox"> Relações publicas<br>
                       <input type="checkbox"> Documentação<br>
